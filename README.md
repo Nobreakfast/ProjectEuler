@@ -1,1 +1,1 @@
-# code
+# This is the C code to solve the ProjectEuler
