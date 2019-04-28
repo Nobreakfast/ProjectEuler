@@ -10,14 +10,31 @@ void init();
 void add(int da1,int da2);
 void printlist();
 void numlist();
+int cal_sq(int da);
 
 struct node *start, *q, *temp;
+int sq[100];
 
 int main()
 {
+
+	for(int i = 2; i<100;++i)
+	{
+		for(int j = 1; j <= i/2; ++j)
+			if(j*j == i)
+				sq[i]=j;
+	}
+
+	for(int i = 0; i<100;++i)
+	{
+		printf("%d", sq[i]);
+	}
+	printf("\n");
+
 	init();
 	
 	printlist();
+
 	return 0;
 }
 
@@ -53,4 +70,8 @@ void printlist()
 void numlist()
 {
 
+}
+int cal_sq(int da)
+{
+	
 }
